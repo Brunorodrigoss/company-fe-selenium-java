@@ -11,6 +11,7 @@ public class SpeechSubmenuFragments {
     private final Constants constants = new Constants();
     By datasetsMenu;
     By spontaneousDialogue = By.xpath("//*[text()='Spontaneous Dialogue']");
+    By scriptedMonologue = By.xpath("//*[text()='Scripted Monologue']");
 
 
     public SpeechSubmenuFragments(WebDriver driver, By datasetsMenu) {
@@ -26,5 +27,10 @@ public class SpeechSubmenuFragments {
     public void spontaneousDialogue() {
         datasetsMenu(this.datasetsMenu);
         menuUtils.selectSubmenu(spontaneousDialogue, constants.url.spontaneousDialogue);
+    }
+
+    public void scriptedMonologue() {
+        datasetsMenu(this.datasetsMenu);
+        menuUtils.selectSubmenu(scriptedMonologue, constants.url.scriptedMonologue);
     }
 }

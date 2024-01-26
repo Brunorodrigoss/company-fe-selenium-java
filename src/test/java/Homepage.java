@@ -33,4 +33,11 @@ public class Homepage {
     public void whenUserSelectTheOptionSpontaneousDialogue_ThenTheApplicationWillRedirectToSpontaneousDialoguePage() {
         homepagePage.menu.datasets.speech.spontaneousDialogue();
     }
+
+    @Test
+    @DisplayName("When the user select the option Scripted Monologue on menu, " +
+            "Then the application will be redirect to Scripted Monologue page")
+    public void whenUserSelectTheOptionScriptedMonologue_ThenTheApplicationWillRedirectToScriptedMonologuePage() {
+        homepagePage.menu.datasets.speech.scriptedMonologue();
+    }
 }
