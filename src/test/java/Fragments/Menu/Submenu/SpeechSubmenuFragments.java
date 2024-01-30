@@ -12,6 +12,9 @@ public class SpeechSubmenuFragments {
     By datasetsMenu;
     By spontaneousDialogue = By.xpath("//*[text()='Spontaneous Dialogue']");
     By scriptedMonologue = By.xpath("//*[text()='Scripted Monologue']");
+    By spontaneousIvr = By.xpath("//*[text()='Spontaneous IVR']");
+    By phoneticLexica = By.xpath("//*[text()='Phonetic Lexica']");
+    By exploreSpeechDatasets = By.xpath("//*[text()='Explore Speech Datasets']");
 
 
     public SpeechSubmenuFragments(WebDriver driver, By datasetsMenu) {
@@ -32,5 +35,20 @@ public class SpeechSubmenuFragments {
     public void scriptedMonologue() {
         datasetsMenu(this.datasetsMenu);
         menuUtils.selectSubmenu(scriptedMonologue, constants.url.scriptedMonologue);
+    }
+
+    public void spontaneousIvr() {
+        datasetsMenu(this.datasetsMenu);
+        menuUtils.selectSubmenu(spontaneousIvr, constants.url.spontaneousIvr);
+    }
+
+    public void phoneticLexica() {
+        datasetsMenu(this.datasetsMenu);
+        menuUtils.selectSubmenu(phoneticLexica, constants.url.phoneticLexica);
+    }
+
+    public void exploreSpeechDatasets() {
+        datasetsMenu(this.datasetsMenu);
+        menuUtils.selectSubmenu(exploreSpeechDatasets, constants.url.exploreSpeechDatasets);
     }
 }

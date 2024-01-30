@@ -40,4 +40,25 @@ public class Homepage {
     public void whenUserSelectTheOptionScriptedMonologue_ThenTheApplicationWillRedirectToScriptedMonologuePage() {
         homepagePage.menu.datasets.speech.scriptedMonologue();
     }
+
+    @Test
+    @DisplayName("When the user select the option Spontaneous IVR on menu, " +
+            "Then the application will be redirect to Spontaneous IVR page")
+    public void whenUserSelectTheOptionSpontaneousIvr_ThenTheApplicationWillRedirectToSpontaneousIvrPage() {
+        homepagePage.menu.datasets.speech.spontaneousIvr();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Phonetic Lexica on menu, " +
+            "Then the application will be redirect to Phonetic Lexica page")
+    public void whenUserSelectTheOptionPhoneticLexica_ThenTheApplicationWillRedirectToPhoneticLexicaPage() {
+        homepagePage.menu.datasets.speech.phoneticLexica();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Explore Speech Datasets on menu, " +
+            "Then the application will be redirect to Explore Speech Datasets page")
+    public void whenUserSelectTheOptionExploreSpeechDatasets_ThenTheApplicationWillRedirectToExploreSpeechDatasetsPage() {
+        homepagePage.menu.datasets.speech.exploreSpeechDatasets();
+    }
 }
