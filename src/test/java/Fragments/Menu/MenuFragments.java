@@ -18,5 +18,4 @@ public class MenuFragments {
         this.driver = driver;
         this.datasets = new DatasetsMenuFragments(this.driver, datasetsMenu);
     }
-
 }
