@@ -20,8 +20,10 @@ public class MenuUtils {
         action.moveToElement(element).perform();
     }
 
-    public void selectSubmenu(By element, String expectedUrl){
-        this.driver.findElement(element).click();
+    public void selectSubmenu(By menu, By submenu, String expectedUrl){
+        this.hoverMenuElement(menu);
+
+        this.driver.findElement(submenu).click();
         String currentUrl = this.driver.getCurrentUrl();
 
         assertEquals(currentUrl, expectedUrl);
