@@ -20,10 +20,10 @@ public class LiveDataSubMenuFragments {
     }
 
     public void podcastsDatasets() {
-        menuUtils.selectSubmenu(this.menu, this.podcastsDatasets, constants.url.podcastsDatasets);
+        menuUtils.selectSubmenu(this.menu, this.podcastsDatasets, this.constants.url.podcastsDatasets);
     }
 
     public void liveVoiceAssistantInquiries() {
-        menuUtils.selectSubmenu(this.menu, this.liveVoiceAssistantInquiries, constants.url.liveVoiceAssistantInquiries);
+        menuUtils.selectSubmenu(this.menu, this.liveVoiceAssistantInquiries, this.constants.url.liveVoiceAssistantInquiries);
     }
 }
