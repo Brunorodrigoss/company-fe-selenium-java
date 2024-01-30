@@ -28,22 +28,22 @@ public class SpeechSubmenuFragments {
     }
 
     public void spontaneousDialogue() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, constants.url.spontaneousDialogue);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, this.constants.url.spontaneousDialogue);
     }
 
     public void scriptedMonologue() {
-        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, constants.url.scriptedMonologue);
+        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, this.constants.url.scriptedMonologue);
     }
 
     public void spontaneousIvr() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, constants.url.spontaneousIvr);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, this.constants.url.spontaneousIvr);
     }
 
     public void phoneticLexica() {
-        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, constants.url.phoneticLexica);
+        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, this.constants.url.phoneticLexica);
     }
 
     public void exploreSpeechDatasets() {
-        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, constants.url.exploreSpeechDatasets);
+        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, this.constants.url.exploreSpeechDatasets);
     }
 }
