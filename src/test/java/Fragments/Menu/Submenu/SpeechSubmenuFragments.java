@@ -9,7 +9,7 @@ public class SpeechSubmenuFragments {
     WebDriver driver;
     MenuUtils menuUtils;
     private final Constants constants = new Constants();
-    By datasetsMenu;
+    By menu;
     By spontaneousDialogue = By.xpath("//*[text()='Spontaneous Dialogue']");
     By scriptedMonologue = By.xpath("//*[text()='Scripted Monologue']");
     By spontaneousIvr = By.xpath("//*[text()='Spontaneous IVR']");
@@ -17,10 +17,10 @@ public class SpeechSubmenuFragments {
     By exploreSpeechDatasets = By.xpath("//*[text()='Explore Speech Datasets']");
 
 
-    public SpeechSubmenuFragments(WebDriver driver, By datasetsMenu) {
+    public SpeechSubmenuFragments(WebDriver driver, By menu) {
         this.driver = driver;
         this.menuUtils = new MenuUtils(this.driver);
-        this.datasetsMenu = datasetsMenu;
+        this.menu = menu;
     }
 
     void datasetsMenu(By elementToHover) {
@@ -28,27 +28,22 @@ public class SpeechSubmenuFragments {
     }
 
     public void spontaneousDialogue() {
-        datasetsMenu(this.datasetsMenu);
-        menuUtils.selectSubmenu(spontaneousDialogue, constants.url.spontaneousDialogue);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, constants.url.spontaneousDialogue);
     }
 
     public void scriptedMonologue() {
-        datasetsMenu(this.datasetsMenu);
-        menuUtils.selectSubmenu(scriptedMonologue, constants.url.scriptedMonologue);
+        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, constants.url.scriptedMonologue);
     }
 
     public void spontaneousIvr() {
-        datasetsMenu(this.datasetsMenu);
-        menuUtils.selectSubmenu(spontaneousIvr, constants.url.spontaneousIvr);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, constants.url.spontaneousIvr);
     }
 
     public void phoneticLexica() {
-        datasetsMenu(this.datasetsMenu);
-        menuUtils.selectSubmenu(phoneticLexica, constants.url.phoneticLexica);
+        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, constants.url.phoneticLexica);
     }
 
     public void exploreSpeechDatasets() {
-        datasetsMenu(this.datasetsMenu);
-        menuUtils.selectSubmenu(exploreSpeechDatasets, constants.url.exploreSpeechDatasets);
+        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, constants.url.exploreSpeechDatasets);
     }
 }
