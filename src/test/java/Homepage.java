@@ -75,5 +75,31 @@ public class Homepage {
         homepagePage.menu.datasets.liveData.liveVoiceAssistantInquiries();
     }
 
+    @Test
+    @DisplayName("When the user select the option Generative AI Datasets on menu, " +
+            "Then the application will be redirect to Generative AI Datasets page")
+    public void whenUserSelectTheOptionGenerativeAiDatasets_ThenTheApplicationWillRedirectToGenerativeAiDatasetsPage() {
+        homepagePage.menu.datasets.generativeAi.generativeAiDatasets();
+    }
 
+    @Test
+    @DisplayName("When the user select the option Healthcare Prompt and Response Data on menu, " +
+            "Then the application will be redirect to Healthcare Prompt and Response Data page")
+    public void whenUserSelectTheOptionHealthcarePromptAndResponseData_ThenTheApplicationWillRedirectToHealthcarePromptAndResponseDataPage() {
+        homepagePage.menu.datasets.generativeAi.healthcarePromptAndResponseData();
+    }
+
+    @Test
+    @DisplayName("When the user select the option STEM Question-Answer Pairs on menu, " +
+            "Then the application will be redirect to STEM Question-Answer Pairs  page")
+    public void whenUserSelectTheOptionStemQuestionAnswerPairs_ThenTheApplicationWillRedirectToStemQuestionAnswerPairs() {
+        homepagePage.menu.datasets.generativeAi.stemQuestionAnswerPairs();
+    }
+
+    @Test
+    @DisplayName("When the user select the option General Knowledge Prompt and Response Dataset on menu, " +
+            "Then the application will be redirect to General Knowledge Prompt and Response Dataset page")
+    public void whenUserSelectTheOptionGeneralKnowledgePromptAndResponseDataset_ThenTheApplicationWillRedirectToGeneralKnowledgePromptAndResponseDataset() {
+        homepagePage.menu.datasets.generativeAi.generalKnowledgePromptAndResponseDataset();
+    }
 }
