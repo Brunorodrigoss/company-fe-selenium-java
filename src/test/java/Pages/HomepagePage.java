@@ -8,7 +8,6 @@ public class HomepagePage {
     WebDriver driver;
     public MenuFragments menu;
 
-
     public HomepagePage(WebDriver driver) {
         this.driver = driver;
         this.menu = new MenuFragments(this.driver);
