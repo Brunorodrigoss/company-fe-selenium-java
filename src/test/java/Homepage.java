@@ -102,4 +102,18 @@ public class Homepage {
     public void whenUserSelectTheOptionGeneralKnowledgePromptAndResponseDataset_ThenTheApplicationWillRedirectToGeneralKnowledgePromptAndResponseDataset() {
         homepagePage.menu.datasets.generativeAi.generalKnowledgePromptAndResponseDataset();
     }
+
+    @Test
+    @DisplayName("When the user select the option Health Screening Reports on menu, " +
+            "Then the application will be redirect to Health Screening Reports page")
+    public void whenUserSelectTheOptionHealthScreeningReports_ThenTheApplicationWillRedirectToHealthScreeningReports() {
+        homepagePage.menu.datasets.miscellaneous.healthScreeningReports();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Medical User Engagement Analytics on menu, " +
+            "Then the application will be redirect to Medical User Engagement Analytics page")
+    public void whenUserSelectTheOptionMedicalUserEngagementAnalytics_ThenTheApplicationWillRedirectToMedicalUserEngagementAnalytics() {
+        homepagePage.menu.datasets.miscellaneous.medicalUserEngagementAnalytics();
+    }
 }

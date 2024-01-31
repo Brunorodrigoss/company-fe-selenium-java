@@ -19,4 +19,8 @@ public class UrlConstants {
     public String healthcarePromptAndResponseData = baseUrl + "dataset/healthcare-prompt-and-response-data";
     public String stemQuestionAnswerPairs = baseUrl + "dataset/stem-question-answer-pairs-dataset-for-large-language-models";
     public String generalKnowledgePromptAndResponseDataset = baseUrl + "dataset/general-knowledge-prompt-and-response";
+
+    // Miscellaneous
+    public String healthScreeningReports = baseUrl + "dataset/health-screening-reports";
+    public String medicalUserEngagementAnalytics = baseUrl + "dataset/medical-user-engagement-analytics";
 }
