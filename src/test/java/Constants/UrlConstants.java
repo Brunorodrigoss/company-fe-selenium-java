@@ -23,4 +23,14 @@ public class UrlConstants {
     // Miscellaneous
     public String healthScreeningReports = baseUrl + "dataset/health-screening-reports";
     public String medicalUserEngagementAnalytics = baseUrl + "dataset/medical-user-engagement-analytics";
+
+    // Image and Video
+    public String selfiesAndPairedIdPhotos = baseUrl + "dataset/selfies-and-paired-id-photos";
+    public String humanImagesAndVideos = baseUrl + "dataset/human-images-and-videos";
+    public String retailImages = baseUrl + "dataset/retail-images";
+    public String sensitiveImagesAndVideos = baseUrl + "dataset/sensitive-images-and-videos";
+    public String shortFormVideos = baseUrl + "dataset/short-form-videos";
+    public String pointOfViewImagesDataset = baseUrl + "dataset/point-of-view-images";
+    public String producedVideoContent = baseUrl + "dataset/produced-content";
+
 }
