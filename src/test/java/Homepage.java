@@ -116,4 +116,53 @@ public class Homepage {
     public void whenUserSelectTheOptionMedicalUserEngagementAnalytics_ThenTheApplicationWillRedirectToMedicalUserEngagementAnalytics() {
         homepagePage.menu.datasets.miscellaneous.medicalUserEngagementAnalytics();
     }
+
+    @Test
+    @DisplayName("When the user select the option Selfies and Paired ID Photos on menu, " +
+            "Then the application will be redirect to Selfies and Paired ID Photos page")
+    public void whenUserSelectTheOptionSelfiesAndPairedIdPhotos_ThenTheApplicationWillRedirectToSelfiesAndPairedIdPhotos() {
+        homepagePage.menu.datasets.imageAndVideo.selfiesAndPairedIdPhotos();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Human Images and Videos on menu, " +
+            "Then the application will be redirect to Human Images and Videos page")
+    public void whenUserSelectTheOptionHumanImagesAndVideos_ThenTheApplicationWillRedirectToHumanImagesAndVideos() {
+        homepagePage.menu.datasets.imageAndVideo.humanImagesAndVideos();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Retail Images on menu, " +
+            "Then the application will be redirect to Retail Images page")
+    public void whenUserSelectTheOptionRetailImages_ThenTheApplicationWillRedirectToRetailImages() {
+        homepagePage.menu.datasets.imageAndVideo.retailImages();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Sensitive Images and Videos on menu, " +
+            "Then the application will be redirect to Sensitive Images and Videos page")
+    public void whenUserSelectTheOptionSensitiveImagesAndVideos_ThenTheApplicationWillRedirectToSensitiveImagesAndVideos() {
+        homepagePage.menu.datasets.imageAndVideo.sensitiveImagesAndVideos();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Short Form Videos on menu, " +
+            "Then the application will be redirect to Short Form Videos page")
+    public void whenUserSelectTheOptionShortFormVideos_ThenTheApplicationWillRedirectToShortFormVideos() {
+        homepagePage.menu.datasets.imageAndVideo.shortFormVideos();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Point-of-View Images Dataset on menu, " +
+            "Then the application will be redirect to Point-of-View Images Dataset page")
+    public void whenUserSelectTheOptionPointOfViewImagesDataset_ThenTheApplicationWillRedirectToPointOfViewImagesDataset() {
+        homepagePage.menu.datasets.imageAndVideo.pointOfViewImagesDataset();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Produced Video Content on menu, " +
+            "Then the application will be redirect to Produced Video Content page")
+    public void whenUserSelectTheOptionProducedVideoContent_ThenTheApplicationWillRedirectToProducedVideoContent() {
+        homepagePage.menu.datasets.imageAndVideo.producedVideoContent();
+    }
 }
