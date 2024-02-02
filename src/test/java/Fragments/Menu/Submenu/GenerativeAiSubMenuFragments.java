@@ -1,24 +1,17 @@
 package Fragments.Menu.Submenu;
 
-import Constants.Constants;
-import Utils.MenuUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GenerativeAiSubMenuFragments {
-    WebDriver driver;
-    MenuUtils menuUtils;
-    private final Constants constants = new Constants();
-    By menu;
+public class GenerativeAiSubMenuFragments extends SubMenuCommonFragments {
+
     By generativeAiDatasets = By.xpath("//*[text()='Generative AI Datasets']");
     By healthcarePromptAndResponseData = By.xpath("//*[text()='Healthcare Prompt and Response Data']");
     By stemQuestionAnswerPairs = By.xpath("//*[text()='STEM Question-Answer Pairs']");
     By generalKnowledgePromptAndResponseDataset = By.xpath("//*[text()='General Knowledge Prompt and Response Dataset']");
 
     public GenerativeAiSubMenuFragments(WebDriver driver, By menu) {
-        this.driver = driver;
-        this.menuUtils = new MenuUtils(this.driver);
-        this.menu = menu;
+        super(driver, menu);
     }
 
     public void generativeAiDatasets() {

@@ -1,15 +1,10 @@
 package Fragments.Menu.Submenu;
 
-import Constants.Constants;
-import Utils.MenuUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ImageAndVideoSubMenuFragments {
-    WebDriver driver;
-    MenuUtils menuUtils;
-    private final Constants constants = new Constants();
-    By menu;
+public class ImageAndVideoSubMenuFragments extends SubMenuCommonFragments {
+
     By selfiesAndPairedIdPhotos = By.xpath("//*[text()='Selfies and Paired ID Photos']");
     By humanImagesAndVideos = By.xpath("//*[text()='Human Images and Videos']");
     By retailImages = By.xpath("//*[text()='Retail Images']");
@@ -19,9 +14,7 @@ public class ImageAndVideoSubMenuFragments {
     By producedVideoContent = By.xpath("//*[text()='Produced Video Content']");
 
     public ImageAndVideoSubMenuFragments(WebDriver driver, By menu) {
-        this.driver = driver;
-        this.menuUtils = new MenuUtils(this.driver);
-        this.menu = menu;
+        super(driver, menu);
     }
 
     public void selfiesAndPairedIdPhotos() {
