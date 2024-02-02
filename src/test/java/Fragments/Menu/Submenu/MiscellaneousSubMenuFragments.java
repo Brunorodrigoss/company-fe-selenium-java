@@ -1,22 +1,15 @@
 package Fragments.Menu.Submenu;
 
-import Constants.Constants;
-import Utils.MenuUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MiscellaneousSubMenuFragments {
-    WebDriver driver;
-    MenuUtils menuUtils;
-    private final Constants constants = new Constants();
-    By menu;
+public class MiscellaneousSubMenuFragments extends SubMenuCommonFragments {
+
     By healthScreeningReports = By.xpath("//*[text()='Health Screening Reports']");
     By medicalUserEngagementAnalytics = By.xpath("//*[text()='Medical User Engagement Analytics']");
 
     public MiscellaneousSubMenuFragments(WebDriver driver, By menu) {
-        this.driver = driver;
-        this.menuUtils = new MenuUtils(this.driver);
-        this.menu = menu;
+        super(driver, menu);
     }
 
     public void healthScreeningReports() {
