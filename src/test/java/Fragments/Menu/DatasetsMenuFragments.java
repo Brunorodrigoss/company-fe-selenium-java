@@ -13,6 +13,7 @@ public class DatasetsMenuFragments {
     public GenerativeAiSubMenuFragments generativeAi;
     public MiscellaneousSubMenuFragments miscellaneous;
     public ImageAndVideoSubMenuFragments imageAndVideo;
+    public TextSubmenuFragments text;
 
     public DatasetsMenuFragments(WebDriver driver, By datasetsMenu){
         this.driver = driver;
@@ -22,5 +23,6 @@ public class DatasetsMenuFragments {
         this.generativeAi = new GenerativeAiSubMenuFragments(this.driver, this.datasetsMenu);
         this.miscellaneous = new MiscellaneousSubMenuFragments(this.driver, this.datasetsMenu);
         this.imageAndVideo = new ImageAndVideoSubMenuFragments(this.driver, this.datasetsMenu);
+        this.text = new TextSubmenuFragments(this.driver, this.datasetsMenu);
     }
 }

@@ -165,4 +165,25 @@ public class Homepage {
     public void whenUserSelectTheOptionProducedVideoContent_ThenTheApplicationWillRedirectToProducedVideoContent() {
         homepagePage.menu.datasets.imageAndVideo.producedVideoContent();
     }
+
+    @Test
+    @DisplayName("When the user select the option Aspect Based Sentiment Analysis on menu, " +
+            "Then the application will be redirect to Aspect Based Sentiment Analysis page")
+    public void whenUserSelectTheOptionAspectBasedSentimentAnalysis_ThenTheApplicationWillRedirectToAspectBasedSentimentAnalysis() {
+        homepagePage.menu.datasets.text.aspectBasedSentimentAnalysis();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Named Entity Recognition on menu, " +
+            "Then the application will be redirect to Named Entity Recognition page")
+    public void whenUserSelectTheOptionNamedEntityRecognition_ThenTheApplicationWillRedirectToNamedEntityRecognition() {
+        homepagePage.menu.datasets.text.namedEntityRecognition();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Parallel Corpora on menu, " +
+            "Then the application will be redirect to Parallel Corpora page")
+    public void whenUserSelectTheOptionParallelCorpora_ThenTheApplicationWillRedirectToParallelCorpora() {
+        homepagePage.menu.datasets.text.parallelCorpora();
+    }
 }

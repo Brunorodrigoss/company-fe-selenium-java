@@ -33,4 +33,8 @@ public class UrlConstants {
     public String pointOfViewImagesDataset = baseUrl + "dataset/point-of-view-images";
     public String producedVideoContent = baseUrl + "dataset/produced-content";
 
+    // Text
+    public String aspectBasedSentimentAnalysis = baseUrl + "dataset/aspect-based-sentiment-analysis";
+    public String namedEntityRecognition = baseUrl + "dataset/named-entity-recognition-dataset";
+    public String parallelCorpora = baseUrl + "dataset/translation-dataset-multilingual-parallel-corpora";
 }
