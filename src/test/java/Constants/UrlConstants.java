@@ -1,6 +1,6 @@
 package Constants;
 
 public class UrlConstants {
-    public String baseUrl = "https://www.defined.ai/";
+    public String baseUrl = "";
     public DatasetsConstants datasets = new DatasetsConstants();
 }
