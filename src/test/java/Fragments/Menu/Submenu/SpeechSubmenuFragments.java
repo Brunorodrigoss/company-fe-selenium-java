@@ -1,6 +1,5 @@
 package Fragments.Menu.Submenu;
 
-import Constants.DatasetsConstants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
