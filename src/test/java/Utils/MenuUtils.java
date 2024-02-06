@@ -1,5 +1,6 @@
 package Utils;
 
+import Constants.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MenuUtils {
+    Constants constants = new Constants();
     WebDriver driver;
 
     public MenuUtils(WebDriver driver) {
@@ -26,6 +28,6 @@ public class MenuUtils {
         this.driver.findElement(submenu).click();
         String currentUrl = this.driver.getCurrentUrl();
 
-        assertEquals(currentUrl, expectedUrl);
+        assertEquals(currentUrl, constants.url.baseUrl + expectedUrl);
     }
 }

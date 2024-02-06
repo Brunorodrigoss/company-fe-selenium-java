@@ -14,16 +14,14 @@ public class TextSubmenuFragments extends SubMenuCommonFragments {
     }
 
     public void aspectBasedSentimentAnalysis() {
-        menuUtils.selectSubmenu(this.menu, this.aspectBasedSentimentAnalysis, this.constants.url.aspectBasedSentimentAnalysis);
+        menuUtils.selectSubmenu(this.menu, this.aspectBasedSentimentAnalysis, this.constants.url.datasets.aspectBasedSentimentAnalysis);
     }
 
     public void namedEntityRecognition() {
-        menuUtils.selectSubmenu(this.menu, this.namedEntityRecognition, this.constants.url.namedEntityRecognition);
+        menuUtils.selectSubmenu(this.menu, this.namedEntityRecognition, this.constants.url.datasets.namedEntityRecognition);
     }
 
     public void parallelCorpora() {
-        menuUtils.selectSubmenu(this.menu, this.parallelCorpora, this.constants.url.parallelCorpora);
+        menuUtils.selectSubmenu(this.menu, this.parallelCorpora, this.constants.url.datasets.parallelCorpora);
     }
-
-
 }

@@ -15,20 +15,18 @@ public class GenerativeAiSubMenuFragments extends SubMenuCommonFragments {
     }
 
     public void generativeAiDatasets() {
-        menuUtils.selectSubmenu(this.menu, this.generativeAiDatasets, this.constants.url.generativeAiDatasets);
+        menuUtils.selectSubmenu(this.menu, this.generativeAiDatasets, this.constants.url.datasets.generativeAiDatasets);
     }
 
     public void healthcarePromptAndResponseData(){
-        menuUtils.selectSubmenu(this.menu, this.healthcarePromptAndResponseData, this.constants.url.healthcarePromptAndResponseData);
+        menuUtils.selectSubmenu(this.menu, this.healthcarePromptAndResponseData, this.constants.url.datasets.healthcarePromptAndResponseData);
     }
 
     public void stemQuestionAnswerPairs(){
-        menuUtils.selectSubmenu(this.menu, this.stemQuestionAnswerPairs, this.constants.url.stemQuestionAnswerPairs);
+        menuUtils.selectSubmenu(this.menu, this.stemQuestionAnswerPairs, this.constants.url.datasets.stemQuestionAnswerPairs);
     }
 
     public void generalKnowledgePromptAndResponseDataset() {
-        menuUtils.selectSubmenu(this.menu, this.generalKnowledgePromptAndResponseDataset, this.constants.url.generalKnowledgePromptAndResponseDataset);
+        menuUtils.selectSubmenu(this.menu, this.generalKnowledgePromptAndResponseDataset, this.constants.url.datasets.generalKnowledgePromptAndResponseDataset);
     }
-
-
 }

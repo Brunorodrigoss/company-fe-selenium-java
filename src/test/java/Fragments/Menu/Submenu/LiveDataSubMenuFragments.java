@@ -12,10 +12,10 @@ public class LiveDataSubMenuFragments extends SubMenuCommonFragments {
     }
 
     public void podcastsDatasets() {
-        menuUtils.selectSubmenu(this.menu, this.podcastsDatasets, this.constants.url.podcastsDatasets);
+        menuUtils.selectSubmenu(this.menu, this.podcastsDatasets, this.constants.url.datasets.podcastsDatasets);
     }
 
     public void liveVoiceAssistantInquiries() {
-        menuUtils.selectSubmenu(this.menu, this.liveVoiceAssistantInquiries, this.constants.url.liveVoiceAssistantInquiries);
+        menuUtils.selectSubmenu(this.menu, this.liveVoiceAssistantInquiries, this.constants.url.datasets.liveVoiceAssistantInquiries);
     }
 }

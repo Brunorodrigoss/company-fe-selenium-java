@@ -13,10 +13,10 @@ public class MiscellaneousSubMenuFragments extends SubMenuCommonFragments {
     }
 
     public void healthScreeningReports() {
-        menuUtils.selectSubmenu(this.menu, this.healthScreeningReports, this.constants.url.healthScreeningReports);
+        menuUtils.selectSubmenu(this.menu, this.healthScreeningReports, this.constants.url.datasets.healthScreeningReports);
     }
 
     public void medicalUserEngagementAnalytics() {
-        menuUtils.selectSubmenu(this.menu, this.medicalUserEngagementAnalytics, this.constants.url.medicalUserEngagementAnalytics);
+        menuUtils.selectSubmenu(this.menu, this.medicalUserEngagementAnalytics, this.constants.url.datasets.medicalUserEngagementAnalytics);
     }
 }

@@ -18,30 +18,30 @@ public class ImageAndVideoSubMenuFragments extends SubMenuCommonFragments {
     }
 
     public void selfiesAndPairedIdPhotos() {
-        menuUtils.selectSubmenu(this.menu, this.selfiesAndPairedIdPhotos, this.constants.url.selfiesAndPairedIdPhotos);
+        menuUtils.selectSubmenu(this.menu, this.selfiesAndPairedIdPhotos, this.constants.url.datasets.selfiesAndPairedIdPhotos);
     }
 
     public void humanImagesAndVideos() {
-        menuUtils.selectSubmenu(this.menu, this.humanImagesAndVideos, this.constants.url.humanImagesAndVideos);
+        menuUtils.selectSubmenu(this.menu, this.humanImagesAndVideos, this.constants.url.datasets.humanImagesAndVideos);
     }
 
     public void retailImages() {
-        menuUtils.selectSubmenu(this.menu, this.retailImages, this.constants.url.retailImages);
+        menuUtils.selectSubmenu(this.menu, this.retailImages, this.constants.url.datasets.retailImages);
     }
 
     public void sensitiveImagesAndVideos() {
-        menuUtils.selectSubmenu(this.menu, this.sensitiveImagesAndVideos, this.constants.url.sensitiveImagesAndVideos);
+        menuUtils.selectSubmenu(this.menu, this.sensitiveImagesAndVideos, this.constants.url.datasets.sensitiveImagesAndVideos);
     }
 
     public void shortFormVideos() {
-        menuUtils.selectSubmenu(this.menu, this.shortFormVideos, this.constants.url.shortFormVideos);
+        menuUtils.selectSubmenu(this.menu, this.shortFormVideos, this.constants.url.datasets.shortFormVideos);
     }
 
     public void pointOfViewImagesDataset() {
-        menuUtils.selectSubmenu(this.menu, this.pointOfViewImagesDataset, this.constants.url.pointOfViewImagesDataset);
+        menuUtils.selectSubmenu(this.menu, this.pointOfViewImagesDataset, this.constants.url.datasets.pointOfViewImagesDataset);
     }
 
     public void producedVideoContent() {
-        menuUtils.selectSubmenu(this.menu, this.producedVideoContent, this.constants.url.producedVideoContent);
+        menuUtils.selectSubmenu(this.menu, this.producedVideoContent, this.constants.url.datasets.producedVideoContent);
     }
 }

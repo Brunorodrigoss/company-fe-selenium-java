@@ -16,22 +16,22 @@ public class SpeechSubmenuFragments extends SubMenuCommonFragments {
     }
 
     public void spontaneousDialogue() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, this.constants.url.spontaneousDialogue);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, this.constants.url.datasets.spontaneousDialogue);
     }
 
     public void scriptedMonologue() {
-        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, this.constants.url.scriptedMonologue);
+        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, this.constants.url.datasets.scriptedMonologue);
     }
 
     public void spontaneousIvr() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, this.constants.url.spontaneousIvr);
+        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, this.constants.url.datasets.spontaneousIvr);
     }
 
     public void phoneticLexica() {
-        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, this.constants.url.phoneticLexica);
+        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, this.constants.url.datasets.phoneticLexica);
     }
 
     public void exploreSpeechDatasets() {
-        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, this.constants.url.exploreSpeechDatasets);
+        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, this.constants.url.datasets.exploreSpeechDatasets);
     }
 }
