@@ -186,4 +186,32 @@ public class Homepage {
     public void whenUserSelectTheOptionParallelCorpora_ThenTheApplicationWillRedirectToParallelCorpora() {
         homepagePage.menu.datasets.text.parallelCorpora();
     }
+
+    @Test
+    @DisplayName("When the user select the option Insurance on menu, " +
+            "Then the application will be redirect to Insurance page")
+    public void whenUserSelectTheOptionInsurance_ThenTheApplicationWillRedirectToInsurance() {
+        homepagePage.menu.industries.insurance();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Finance on menu, " +
+            "Then the application will be redirect to Finance page")
+    public void whenUserSelectTheOptionFinance_ThenTheApplicationWillRedirectToFinance() {
+        homepagePage.menu.industries.finance();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Telecommunications on menu, " +
+            "Then the application will be redirect to Telecommunications page")
+    public void whenUserSelectTheOptionTelecommunications_ThenTheApplicationWillRedirectToTelecommunications() {
+        homepagePage.menu.industries.telecommunications();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Retail on menu, " +
+            "Then the application will be redirect to Retail page")
+    public void whenUserSelectTheOptionRetail_ThenTheApplicationWillRedirectToRetail() {
+        homepagePage.menu.industries.retail();
+    }
 }
