@@ -21,13 +21,6 @@ public class HomepageTest extends BaseTestClass {
 
 
     @Test
-    @DisplayName("When the user select the option Healthcare Prompt and Response Data on menu, " +
-            "Then the application will be redirect to Healthcare Prompt and Response Data page")
-    public void whenUserSelectTheOptionHealthcarePromptAndResponseData_ThenTheApplicationWillRedirectToHealthcarePromptAndResponseDataPage() {
-        homepagePage.menu.datasets.generativeAi.healthcarePromptAndResponseData();
-    }
-
-    @Test
     @DisplayName("When the user select the option STEM Question-Answer Pairs on menu, " +
             "Then the application will be redirect to STEM Question-Answer Pairs  page")
     public void whenUserSelectTheOptionStemQuestionAnswerPairs_ThenTheApplicationWillRedirectToStemQuestionAnswerPairs() {

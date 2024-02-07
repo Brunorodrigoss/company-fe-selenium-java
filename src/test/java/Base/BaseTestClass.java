@@ -19,6 +19,7 @@ public class BaseTestClass {
     public PodcastsDatasetsPage podcastsDatasetsPage;
     public LiveVoiceAssistantInquiriesPage liveVoiceAssistantInquiriesPage;
     public GenerativeAiDatasetsPage generativeAiDatasetsPage;
+    public HealthcarePromptAndResponseDataPage healthcarePromptAndResponseDataPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
