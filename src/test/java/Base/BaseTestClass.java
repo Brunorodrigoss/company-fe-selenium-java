@@ -17,6 +17,7 @@ public class BaseTestClass {
     public PhoneticLexicaPage phoneticLexicaPage;
     public ExploreSpeechDatasetsPage exploreSpeechDatasetsPage;
     public PodcastsDatasetsPage podcastsDatasetsPage;
+    public LiveVoiceAssistantInquiriesPage liveVoiceAssistantInquiriesPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);

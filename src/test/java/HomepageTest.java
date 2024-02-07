@@ -18,12 +18,7 @@ public class HomepageTest extends BaseTestClass {
         this.driver.quit();
     }
 
-    @Test
-    @DisplayName("When the user select the option Live Voice Assistant Inquiries on menu, " +
-            "Then the application will be redirect to Live Voice Assistant Inquiries page")
-    public void whenUserSelectTheOptionLiveVoiceAssistantInquiries_ThenTheApplicationWillRedirectToLiveVoiceAssistantInquiriesPage() {
-        homepagePage.menu.datasets.liveData.liveVoiceAssistantInquiries();
-    }
+
 
     @Test
     @DisplayName("When the user select the option Generative AI Datasets on menu, " +
