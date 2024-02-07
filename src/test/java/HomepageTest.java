@@ -20,15 +20,6 @@ public class HomepageTest extends BaseTestClass {
 
 
 
-
-
-    @Test
-    @DisplayName("When the user select the option Explore Speech Datasets on menu, " +
-            "Then the application will be redirect to Explore Speech Datasets page")
-    public void whenUserSelectTheOptionExploreSpeechDatasets_ThenTheApplicationWillRedirectToExploreSpeechDatasetsPage() {
-        homepagePage.menu.datasets.speech.exploreSpeechDatasets();
-    }
-
     @Test
     @DisplayName("When the user select the option Podcasts Datasets on menu, " +
             "Then the application will be redirect to Podcasts Datasets page")
