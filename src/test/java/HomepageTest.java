@@ -7,12 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class Homepage {
+public class HomepageTest {
     private final Constants constants = new Constants();
     private WebDriver driver;
     private HomepagePage homepagePage;
 
-    @BeforeAll
+    @BeforeEach
     public void setup() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
         driver = new ChromeDriver();
@@ -22,9 +22,9 @@ public class Homepage {
         homepagePage.setup(constants.url.baseUrl);
     }
 
-    @AfterAll
+    @AfterEach
     public void tearDown() {
-        this.driver.close();
+        this.driver.quit();
     }
 
     @Test
