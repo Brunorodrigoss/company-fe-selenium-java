@@ -4,6 +4,7 @@ import Constants.Constants;
 import Pages.HomepagePage;
 import Pages.ScriptedMonologuePage;
 import Pages.SpontaneousDialoguePage;
+import Pages.SpontaneousIvrPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,6 +16,7 @@ public class BaseTestClass {
     public HomepagePage homepagePage;
     public SpontaneousDialoguePage spontaneousDialoguePage;
     public ScriptedMonologuePage scriptedMonologuePage;
+    public SpontaneousIvrPage spontaneousIvrPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
