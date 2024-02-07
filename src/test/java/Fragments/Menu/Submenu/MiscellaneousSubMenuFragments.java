@@ -1,9 +1,10 @@
 package Fragments.Menu.Submenu;
 
+import Common.MenuCommon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MiscellaneousSubMenuFragments extends SubMenuCommonFragments {
+public class MiscellaneousSubMenuFragments extends MenuCommon {
 
     By healthScreeningReports = By.xpath("//*[text()='Health Screening Reports']");
     By medicalUserEngagementAnalytics = By.xpath("//*[text()='Medical User Engagement Analytics']");
@@ -13,10 +14,18 @@ public class MiscellaneousSubMenuFragments extends SubMenuCommonFragments {
     }
 
     public void healthScreeningReports() {
-        menuUtils.selectSubmenu(this.menu, this.healthScreeningReports, this.constants.url.datasets.healthScreeningReports);
+        selectSubmenu(
+                this.menu,
+                this.healthScreeningReports,
+                this.constants.url.baseUrl + this.constants.url.datasets.healthScreeningReports
+        );
     }
 
     public void medicalUserEngagementAnalytics() {
-        menuUtils.selectSubmenu(this.menu, this.medicalUserEngagementAnalytics, this.constants.url.datasets.medicalUserEngagementAnalytics);
+        selectSubmenu(
+                this.menu,
+                this.medicalUserEngagementAnalytics,
+                this.constants.url.baseUrl + this.constants.url.datasets.medicalUserEngagementAnalytics
+        );
     }
 }

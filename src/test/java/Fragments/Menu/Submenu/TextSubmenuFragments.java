@@ -1,9 +1,10 @@
 package Fragments.Menu.Submenu;
 
+import Common.MenuCommon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TextSubmenuFragments extends SubMenuCommonFragments {
+public class TextSubmenuFragments extends MenuCommon {
 
     By aspectBasedSentimentAnalysis = By.xpath("//*[text()='Aspect Based Sentiment Analysis']");
     By namedEntityRecognition = By.xpath("//*[text()='Named Entity Recognition']");
@@ -14,14 +15,26 @@ public class TextSubmenuFragments extends SubMenuCommonFragments {
     }
 
     public void aspectBasedSentimentAnalysis() {
-        menuUtils.selectSubmenu(this.menu, this.aspectBasedSentimentAnalysis, this.constants.url.datasets.aspectBasedSentimentAnalysis);
+        selectSubmenu(
+                this.menu,
+                this.aspectBasedSentimentAnalysis,
+                this.constants.url.baseUrl + this.constants.url.datasets.aspectBasedSentimentAnalysis
+        );
     }
 
     public void namedEntityRecognition() {
-        menuUtils.selectSubmenu(this.menu, this.namedEntityRecognition, this.constants.url.datasets.namedEntityRecognition);
+        selectSubmenu(
+                this.menu,
+                this.namedEntityRecognition,
+                this.constants.url.baseUrl + this.constants.url.datasets.namedEntityRecognition
+        );
     }
 
     public void parallelCorpora() {
-        menuUtils.selectSubmenu(this.menu, this.parallelCorpora, this.constants.url.datasets.parallelCorpora);
+        selectSubmenu(
+                this.menu,
+                this.parallelCorpora,
+                this.constants.url.baseUrl + this.constants.url.datasets.parallelCorpora
+        );
     }
 }
