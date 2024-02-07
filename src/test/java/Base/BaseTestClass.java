@@ -18,6 +18,7 @@ public class BaseTestClass {
     public ExploreSpeechDatasetsPage exploreSpeechDatasetsPage;
     public PodcastsDatasetsPage podcastsDatasetsPage;
     public LiveVoiceAssistantInquiriesPage liveVoiceAssistantInquiriesPage;
+    public GenerativeAiDatasetsPage generativeAiDatasetsPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
