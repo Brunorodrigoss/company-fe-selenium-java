@@ -18,14 +18,6 @@ public class HomepageTest extends BaseTestClass {
         this.driver.quit();
     }
 
-
-
-    @Test
-    @DisplayName("When the user select the option Podcasts Datasets on menu, " +
-            "Then the application will be redirect to Podcasts Datasets page")
-    public void whenUserSelectTheOptionPodcastsDatasets_ThenTheApplicationWillRedirectToPodcastsDatasetsPage() {
-        homepagePage.menu.datasets.liveData.podcastsDatasets();
-    }
     @Test
     @DisplayName("When the user select the option Live Voice Assistant Inquiries on menu, " +
             "Then the application will be redirect to Live Voice Assistant Inquiries page")

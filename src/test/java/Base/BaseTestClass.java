@@ -16,6 +16,7 @@ public class BaseTestClass {
     public SpontaneousIvrPage spontaneousIvrPage;
     public PhoneticLexicaPage phoneticLexicaPage;
     public ExploreSpeechDatasetsPage exploreSpeechDatasetsPage;
+    public PodcastsDatasetsPage podcastsDatasetsPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
