@@ -1,10 +1,7 @@
 package Base;
 
 import Constants.Constants;
-import Pages.HomepagePage;
-import Pages.ScriptedMonologuePage;
-import Pages.SpontaneousDialoguePage;
-import Pages.SpontaneousIvrPage;
+import Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -17,12 +14,11 @@ public class BaseTestClass {
     public SpontaneousDialoguePage spontaneousDialoguePage;
     public ScriptedMonologuePage scriptedMonologuePage;
     public SpontaneousIvrPage spontaneousIvrPage;
+    public PhoneticLexicaPage phoneticLexicaPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(constants.config.driveImplicitlyWait));
-
-        homepagePage = new HomepagePage(driver);
     }
 }

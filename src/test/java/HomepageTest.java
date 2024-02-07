@@ -20,12 +20,7 @@ public class HomepageTest extends BaseTestClass {
 
 
 
-    @Test
-    @DisplayName("When the user select the option Phonetic Lexica on menu, " +
-            "Then the application will be redirect to Phonetic Lexica page")
-    public void whenUserSelectTheOptionPhoneticLexica_ThenTheApplicationWillRedirectToPhoneticLexicaPage() {
-        homepagePage.menu.datasets.speech.phoneticLexica();
-    }
+
 
     @Test
     @DisplayName("When the user select the option Explore Speech Datasets on menu, " +
