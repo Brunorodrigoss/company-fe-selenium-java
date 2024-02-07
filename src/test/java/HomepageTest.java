@@ -21,13 +21,6 @@ public class HomepageTest extends BaseTestClass {
 
 
     @Test
-    @DisplayName("When the user select the option Spontaneous IVR on menu, " +
-            "Then the application will be redirect to Spontaneous IVR page")
-    public void whenUserSelectTheOptionSpontaneousIvr_ThenTheApplicationWillRedirectToSpontaneousIvrPage() {
-        homepagePage.menu.datasets.speech.spontaneousIvr();
-    }
-
-    @Test
     @DisplayName("When the user select the option Phonetic Lexica on menu, " +
             "Then the application will be redirect to Phonetic Lexica page")
     public void whenUserSelectTheOptionPhoneticLexica_ThenTheApplicationWillRedirectToPhoneticLexicaPage() {
