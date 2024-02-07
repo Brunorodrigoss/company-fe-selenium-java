@@ -1,9 +1,10 @@
 package Fragments.Menu.Submenu;
 
+import Common.MenuCommon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SpeechSubmenuFragments extends SubMenuCommonFragments {
+public class SpeechSubmenuFragments extends MenuCommon {
 
     By spontaneousDialogue = By.xpath("//*[text()='Spontaneous Dialogue']");
     By scriptedMonologue = By.xpath("//*[text()='Scripted Monologue']");
@@ -16,22 +17,42 @@ public class SpeechSubmenuFragments extends SubMenuCommonFragments {
     }
 
     public void spontaneousDialogue() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousDialogue, this.constants.url.datasets.spontaneousDialogue);
+        selectSubmenu(
+                this.menu,
+                this.spontaneousDialogue,
+                this.constants.url.baseUrl + this.constants.url.datasets.spontaneousDialogue
+        );
     }
 
     public void scriptedMonologue() {
-        menuUtils.selectSubmenu(this.menu, this.scriptedMonologue, this.constants.url.datasets.scriptedMonologue);
+        selectSubmenu(
+                this.menu,
+                this.scriptedMonologue,
+                this.constants.url.baseUrl + this.constants.url.datasets.scriptedMonologue
+        );
     }
 
     public void spontaneousIvr() {
-        menuUtils.selectSubmenu(this.menu, this.spontaneousIvr, this.constants.url.datasets.spontaneousIvr);
+        selectSubmenu(
+                this.menu,
+                this.spontaneousIvr,
+                this.constants.url.baseUrl + this.constants.url.datasets.spontaneousIvr
+        );
     }
 
     public void phoneticLexica() {
-        menuUtils.selectSubmenu(this.menu, this.phoneticLexica, this.constants.url.datasets.phoneticLexica);
+        selectSubmenu(
+                this.menu,
+                this.phoneticLexica,
+                this.constants.url.baseUrl + this.constants.url.datasets.phoneticLexica
+        );
     }
 
     public void exploreSpeechDatasets() {
-        menuUtils.selectSubmenu(this.menu, exploreSpeechDatasets, this.constants.url.datasets.exploreSpeechDatasets);
+        selectSubmenu(
+                this.menu,
+                this.exploreSpeechDatasets,
+                this.constants.url.baseUrl + this.constants.url.datasets.exploreSpeechDatasets
+        );
     }
 }

@@ -1,6 +1,9 @@
 package Constants;
 
 public class UrlConstants {
-    public String baseUrl = "";
+    String companyName = "";
+    public String baseUrl = "https://www."+companyName+"/";
+    public String resourcesBaseUrl = "https://resources."+companyName+"/";
     public DatasetsConstants datasets = new DatasetsConstants();
+    public IndustriesConstants industries = new IndustriesConstants();
 }

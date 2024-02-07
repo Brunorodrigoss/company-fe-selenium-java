@@ -7,12 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class Homepage {
+public class HomepageTest {
     private final Constants constants = new Constants();
     private WebDriver driver;
     private HomepagePage homepagePage;
 
-    @BeforeAll
+    @BeforeEach
     public void setup() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);
         driver = new ChromeDriver();
@@ -22,9 +22,9 @@ public class Homepage {
         homepagePage.setup(constants.url.baseUrl);
     }
 
-    @AfterAll
+    @AfterEach
     public void tearDown() {
-        this.driver.close();
+        this.driver.quit();
     }
 
     @Test
@@ -185,5 +185,33 @@ public class Homepage {
             "Then the application will be redirect to Parallel Corpora page")
     public void whenUserSelectTheOptionParallelCorpora_ThenTheApplicationWillRedirectToParallelCorpora() {
         homepagePage.menu.datasets.text.parallelCorpora();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Insurance on menu, " +
+            "Then the application will be redirect to Insurance page")
+    public void whenUserSelectTheOptionInsurance_ThenTheApplicationWillRedirectToInsurance() {
+        homepagePage.menu.industries.insurance();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Finance on menu, " +
+            "Then the application will be redirect to Finance page")
+    public void whenUserSelectTheOptionFinance_ThenTheApplicationWillRedirectToFinance() {
+        homepagePage.menu.industries.finance();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Telecommunications on menu, " +
+            "Then the application will be redirect to Telecommunications page")
+    public void whenUserSelectTheOptionTelecommunications_ThenTheApplicationWillRedirectToTelecommunications() {
+        homepagePage.menu.industries.telecommunications();
+    }
+
+    @Test
+    @DisplayName("When the user select the option Retail on menu, " +
+            "Then the application will be redirect to Retail page")
+    public void whenUserSelectTheOptionRetail_ThenTheApplicationWillRedirectToRetail() {
+        homepagePage.menu.industries.retail();
     }
 }
