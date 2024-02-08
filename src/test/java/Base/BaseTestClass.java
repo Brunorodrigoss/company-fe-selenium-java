@@ -20,6 +20,7 @@ public class BaseTestClass {
     public LiveVoiceAssistantInquiriesPage liveVoiceAssistantInquiriesPage;
     public GenerativeAiDatasetsPage generativeAiDatasetsPage;
     public HealthcarePromptAndResponseDataPage healthcarePromptAndResponseDataPage;
+    public StemQuestionAnswerPairsPage stemQuestionAnswerPairsPage;
 
     public void setupDriver() {
         System.setProperty(constants.config.driverKey, constants.config.driverPath);

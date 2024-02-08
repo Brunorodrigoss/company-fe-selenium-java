@@ -17,15 +17,8 @@ public class HomepageTest extends BaseTestClass {
     public void tearDown() {
         this.driver.quit();
     }
+    
 
-
-
-    @Test
-    @DisplayName("When the user select the option STEM Question-Answer Pairs on menu, " +
-            "Then the application will be redirect to STEM Question-Answer Pairs  page")
-    public void whenUserSelectTheOptionStemQuestionAnswerPairs_ThenTheApplicationWillRedirectToStemQuestionAnswerPairs() {
-        homepagePage.menu.datasets.generativeAi.stemQuestionAnswerPairs();
-    }
 
     @Test
     @DisplayName("When the user select the option General Knowledge Prompt and Response Dataset on menu, " +
